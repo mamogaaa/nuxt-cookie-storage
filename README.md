@@ -3,7 +3,7 @@ Cookie storage module for Nuxt.js
 
 ## Install
 ```bash
-npm install http://github.com/nordikafiles/nuxt-cookie-storage
+npm install --save nuxt-cookie-storage
 ```
 
 ## Usage
