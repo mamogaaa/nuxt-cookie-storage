@@ -38,6 +38,8 @@ Storage::ssetJSON = (value, context) ->
     value = {}
   Cookie.set @COOKIE_KEY, value, expires: 150
   req.headers.cookie = global.document.cookie
+  if res.getHeader 'Set-Cookie'
+    res.removeHeader 'Set-Cookie'
   res.setHeader 'Set-Cookie', global.document.cookie
 
 Storage::sgetJSON = (context) ->
